@@ -1,11 +1,16 @@
 ## Harris Corner Detection for Video Processing
 
-Implemented the Harris Corner Detection algorithm for video processing. Wrote various OpenCV functions from scratch:
+Implemented the Harris Corner Detection algorithm for video processing.
+Implemented Non-Maximum Suppression and multiprocessing for video frames, resulting in approximately a **15x improvement** in time-to-process per frame.
+Wrote various OpenCV functions from scratch:
 
 - **`convolve()`:**
   - Used SciPy’s Fast Fourier Transform (FFT) functions to convert the array to the FFT domain.
   - Utilized the Convolution Theorem: Multiplying in the frequency domain = convolution in the spatial domain.
   - Applied the Inverse FFT function to convert back to the spatial domain.
+ 
+- **`apply_along_axis()`:**
+  - Applies convolution along each row and axis.
 
 - **`cvtColor()`:**
   - Converts the original image to grayscale.
@@ -17,7 +22,3 @@ Implemented the Harris Corner Detection algorithm for video processing. Wrote va
   - The first attempt used a k-by-k kernel, but it was too slow.
   - Switched to separable convolution for improved efficiency.
 
-- **`apply_along_axis()`:**
-  - Applies convolution along each row and axis.
-
-Implemented Non-Maximum Suppression and multiprocessing for video frames, resulting in approximately a **15x improvement** in time-to-process per frame.
