@@ -22,3 +22,4 @@ Wrote various OpenCV functions from scratch:
   - The first attempt used a k-by-k kernel, but it was too slow.
   - Switched to separable convolution for improved efficiency.
 
+### [Presentation Link](https://docs.google.com/presentation/d/11f1OSlC2Pb5wMTSbOezbI816ZdHqQ6261RltjsTJmB0/edit?usp=sharing)
